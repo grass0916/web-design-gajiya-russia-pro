@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'wt024';
+  src: url('./fonts/wt024.ttf');
+}
+@font-face {
+  font-family: 'wt005';
+  src: url('./fonts/wt005.ttf');
+}
+
+/* Slider */
+
+#slider {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	margin: 50px 0 0 0;
+	overflow: hidden;
+	background: #000;
+}
+
+/* Introduction */
+
+#introduction {
+	background: #333;
+	padding: 50px 10px;
+	margin-bottom: 5px;
+	border-top: 3px solid #F89C29;
+	border-bottom: 3px solid #F89C29;
+}
+
+#introduction p {
+	color: #FFF;
+	text-align: justify;
+	font-size: 16pt;
+	font-weight: 300;
+	font-family: 'wt024', sans-serif;
+	line-height: 1.55em;
+}
+
+#introduction p .company {
+	color: #F89C29;
+	font-size: 1.35em;
+}
+
+/* Featured */
+
+#featured {
+	/*background: #FFE;*/
+	padding: 50px 0;
+}
+
+.row-container {
+	max-width: 1080px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.row-container h3.subtitle {
+	font-family: 'Kite One', sans-serif;
+	color: #232323;
+	font-size: 2.75em;
+	font-weight: 700;
+	margin-bottom: 15px;
+	letter-spacing: 0.05em;
+}
+
+.row-container .inline-block {
+	display: inline-block;
+	position: relative;
+	width: 290px;
+	height: 225px;
+	background-size: cover;
+	background-position: center;
+	margin: 15px;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.row-container .inline-block p {
+	opacity: 0.75;
+	color: #FFFFFF;
+	font-family: 'Inknut Antiqua', serif;
+	text-shadow: 0 0 3px #000, 0 0 5px #000;
+	text-align: center;
+	font-size: 1.75em;
+	line-height: 400px;
+	font-weight: 700;
+	transition: all 200ms;
+	margin: 0;
+}
+
+.row-container .inline-block:hover p {
+	opacity: 1;
+	text-shadow: 0px 0px 5px #666;
+	font-size: 2.0em;
+	line-height: 225px;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+
+/* Footer */
+
+.site-footer {
+	position: relative;
+	background: #333;
+	border-top: 3px solid #F89C29;
+	padding: 35px 10px;
+}
+
+.site-footer h4 {
+	font-family: 'wt005', sans-serif;
+	color: #CCC;
+	font-size: 1.45em;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	border-bottom: #CCC 1px solid;
+	padding-left: 0.2em;
+	padding-bottom: 0.25em;
+	margin-right: 60px;
+}
+
+.site-footer .content {
+	max-width: 1080px;
+	color: #AAA;
+	font-size: 1.15em;
+	margin: 0 auto;
+}
+
+.site-footer .content .sitemap .column {
+	display: inline-block;
+	margin: 0 0 30px 0;
+}
+
+.site-footer .content .sitemap .column p {
+	margin-left: 0.5em;
+}
+
+.site-footer .content .copyright {
+	color: #666;
+	text-align: right;
+	margin-top: 35px;
+}
+
+.site-footer .content .copyright img.logo {
+	max-width: 250px;
+}
+
+.three.columns .column {
+	width: 33%;
+}
+
+@media only screen and (max-device-width: 480px) {
+	.site-footer .content .sitemap .column {
+		margin-left: 10px;
+	}
+
+	.three.columns .column {
+		width: 100%;
+	}
+
+}
