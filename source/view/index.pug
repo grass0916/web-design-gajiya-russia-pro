@@ -22,7 +22,31 @@ html
 	body
 		block content
 			header.site-header
-				.site-navigation
+				.site-navigation.row-container
+					ul
+						li.item
+							a(href='./index.html')
+								img.logo(src='./static/images/logo/mini.png')
+						li.item
+							a(href='#')
+								| 登山靴
+						li.item
+							a(href='#')
+								| 戰鬥靴
+						li.item
+							a(href='#')
+								| 衣服
+						li.item
+							a(href='#')
+								| 背包
+						li.item
+							a(href='#')
+								| 改裝套件
+						li.item
+							a(href='#')
+								| 手錶
+						//- li.language 中文
+						//- li.language English
 
 			#slider
 				.slider-container
@@ -34,7 +58,7 @@ html
 							.slide__bg(style="background-image: url(./static/images/slide/01.jpg)")
 							.slide__content
 								svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
-									path.slide__overlay-path(d='M0,0 150,0 500,405 0,405', style='fill: #111;')
+									path.slide__overlay-path(d='M0,0 150,0 350,405 0,405', style='fill: #111;')
 								.slide__text
 									h2.slide__text-heading
 										| Slide 1
@@ -45,7 +69,7 @@ html
 							.slide__bg(style="background-image: url(./static/images/slide/02.jpg)")
 							.slide__content
 								svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
-									path.slide__overlay-path(d='M0,0 150,0 500,405 0,405', style='fill: #111;')
+									path.slide__overlay-path(d='M0,0 150,0 350,405 0,405', style='fill: #111;')
 								.slide__text
 									h2.slide__text-heading
 										| Slide 2
@@ -56,7 +80,7 @@ html
 							.slide__bg(style="background-image: url(./static/images/slide/03.jpg)")
 							.slide__content
 								svg.slide__overlay(viewbox='0 0 720 405', preserveaspectratio='xMaxYMax slice')
-									path.slide__overlay-path(d='M0,0 150,0 500,405 0,405', style='fill: #111;')
+									path.slide__overlay-path(d='M0,0 150,0 350,405 0,405', style='fill: #111;')
 								.slide__text
 									h2.slide__text-heading
 										| Slide 3
@@ -87,10 +111,10 @@ html
 				.row-container
 					h3.subtitle FEATURED
 				.row-container
-					each index in ['01', '02', '03', '04', '05', '06', '07', '08']
+					each item in [{ index: '01', text: '形象短片' }, { index: '02', text: '登山靴' }, { index: '03', text: '戰鬥靴' }, { index: '04', text: '衣服' }, { index: '05', text: '背包' }, { index: '06', text: '改裝套件' }, { index: '07', text: '手錶' }]
 						a(href='#')
-							.inline-block(style='background-image:url(./static/images/block/' + index + '.png)')
-								p Text here
+							.inline-block(style='background-image:url(./static/images/block/' + item.index + '.png)')
+								p.label #{item.text}
 
 			footer.site-footer
 				.content

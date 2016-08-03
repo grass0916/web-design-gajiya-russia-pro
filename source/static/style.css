@@ -7,13 +7,65 @@
   src: url('./fonts/wt005.ttf');
 }
 
+/* Global */
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Header */
+
+.site-header {
+	font-family: 'wt005', sans-serif;
+	border-bottom: 1px solid #666;
+	background: #000;
+}
+
+.site-header .site-navigation {
+	text-align: left;
+}
+
+.site-header .site-navigation img.logo {
+	position: relative;
+	top: 6px;
+	width: 30px;
+}
+
+.site-header .site-navigation ul {
+	padding: 0 0 0 5px;
+	margin: 0;
+}
+
+.site-header .site-navigation ul li {
+	display: inline-block;
+	color: #FFF;
+	font-size: 1.35em;
+	line-height: 2em;
+	padding: 5px 3px;
+	cursor: pointer;
+}
+
+.site-header .site-navigation ul li:hover {
+	color: #F89C29;
+}
+
+.site-header .site-navigation ul li.item {
+	margin-right: 20px;
+}
+
+.site-header .site-navigation ul li.language {
+	float: right;
+	margin-left: 20px;
+}
+
 /* Slider */
 
 #slider {
 	position: relative;
 	width: 100%;
 	height: 450px;
-	margin: 50px 0 0 0;
+	margin: 0;
 	overflow: hidden;
 	background: #000;
 }
@@ -79,12 +131,12 @@
 .row-container .inline-block p {
 	opacity: 0.75;
 	color: #FFFFFF;
-	font-family: 'Inknut Antiqua', serif;
+	font-family: 'wt005', 'Inknut Antiqua', serif;
 	text-shadow: 0 0 3px #000, 0 0 5px #000;
 	text-align: center;
 	font-size: 1.75em;
 	line-height: 400px;
-	font-weight: 700;
+	font-weight: 300;
 	transition: all 200ms;
 	margin: 0;
 }
